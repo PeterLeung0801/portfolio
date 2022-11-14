@@ -1,0 +1,188 @@
+/*  3. Global CSS
+/*-------------------------------------------*/
+body {
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    line-height: 1.8;
+    margin: 0;
+    font-size: 16px;
+}
+
+.section-head {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.section-head:after {
+    content: "";
+    height: 1px;
+    width: 120px;
+    background: #eee;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 60px);
+    z-index: 1;
+}
+
+.section-head:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 20px);
+    height: 1px;
+    width: 40px;
+    background: #64dd17;
+    z-index: 2;
+}
+
+.head-left {
+    margin-bottom: 0px;
+    display: inline-block;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f4f4f4;
+    position: relative;
+}
+
+.head-left:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background: #64dd17;
+    height: 1px;
+    width: 70px;
+}
+
+.sm-title {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.button-top {
+    position: fixed;
+    bottom: 20px;
+    right: -200px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: #64dd17;
+    z-index: 99999999;
+    opacity: 1;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.button-top:hover {
+    opacity: 1;
+}
+
+.button-show {
+    right: 20px;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.butn {
+    padding: 8px 28px;
+    border: 1px solid #64dd17;
+    color: #64dd17;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.butn-bg {
+    background: #64dd17;
+    color: #fff;
+}
+
+.butn-bg:hover {
+    background: transparent;
+    color: #64dd17;
+}
+
+.butn-bord:hover {
+    background: #64dd17;
+    color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none !important;
+    list-style: none !important;
+    outline: none !important;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+span {
+    display: inline-block;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+}
